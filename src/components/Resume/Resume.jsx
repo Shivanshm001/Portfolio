@@ -5,6 +5,7 @@ import useTitle from '../../hooks/useTitle';
 import DarkButton from '../DarkButton/DarkButton';
 import Project from '../Project/Project';
 
+import projectData from '../Project/projectData.jsx';
 
 export default function Resume() {
   useTitle("Resume");
@@ -38,18 +39,12 @@ export default function Resume() {
             </div>
             <div className='flex flex-col gap-20'>
 
-              <Project 
-              title={"URL_Shortener"}
-              image={"https://picsum.photos/200/100"}
-              year={"2023"}
-              details={[
-                "Bachelor's in Computer Science",               
-                "Bachelor's in Computer Science",               
-                "Bachelor's in Computer Science",               
-                "Bachelor's in Computer Science",               
-                "Bachelor's in Computer Science",               
-              ]}
-              />
+             {
+                projectData.map((project,index) => {
+                  console.log(project);
+                  return <Project key={index} title={project.title} startYear={project.startYear} endYear={project.endYear} image={project.imageLink} link={project.websiteLink} details={project.details}/>
+                })
+             }
             </div>
           </div>
         </div>

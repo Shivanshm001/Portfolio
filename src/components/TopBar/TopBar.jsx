@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 export default function TopBar() {
 
   return (
-    <div className=' bg-stone-900 flex gap-1 min-h-[30px] font-poppins p-1'>
+    <div className=' bg-stone-900 flex gap-1 min-h-[30px] font-poppins p-1 z-[1000]'>
       <TopBarTab desitination={"/"} title={"Home"} icon={<JSIcon />} />
       <TopBarTab desitination={"/about"} title={"About"} icon={<JSIcon />} />
       <TopBarTab desitination={"/resume"} title={"Resume"} icon={<JSIcon />} />

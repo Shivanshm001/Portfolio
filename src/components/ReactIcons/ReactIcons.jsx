@@ -1,5 +1,5 @@
 import react from 'react';
-import { AiFillGithub, AiOutlineClose, AiOutlineFileText } from 'react-icons/ai';
+import { AiFillCaretDown, AiFillGithub, AiOutlineClose, AiOutlineDown, AiOutlineFileText } from 'react-icons/ai';
 import { FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiBootstrap, SiExpress, SiRedux, SiTailwindcss, SiMysql } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
@@ -56,5 +56,9 @@ export const GitHubIcon = () => {
 
 
 export const TextFileIcon = () => {
-    return <AiOutlineFileText style={{ fontSize: "1.5rem", color:"skyblue" }} />
+    return <AiOutlineFileText style={{ fontSize: "1.5rem", color: "skyblue" }} />
+}
+
+export const DownIcon = () => {
+    return <AiOutlineDown style={{ fontSize: "1.5rem", }} />
 }

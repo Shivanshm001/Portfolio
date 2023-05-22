@@ -29,7 +29,7 @@ function FunctionHeading({ title, subTitle, children }) {
 export default function About() {
   useTitle("About")
   return (
-    <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-start items-center'>
+    <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-start items-center' id='aboutme'>
       <div className='font-roboto  max-w-[80%]'>
 
         <div className='min-h-screen flex justify-center  flex-col max-w-[80%]'>
@@ -45,7 +45,7 @@ export default function About() {
         <div className='my-20 max-w-[85%]'>
           <CommentedHeading title={"Tools used in my projects :"} style={"text-lg"} />
           <FunctionHeading title={"Tools_Used"} subTitle={"in_projects"}>
-            <div className='grid grid-cols-3 gap-3 px-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 gap-3 px-4'>
               <ToolIcon name={"JavaScript (ES6)"} icon={<JSIcon />} />
               <ToolIcon name={"React"} icon={<JSXIcon />} />
               <ToolIcon name={"Tailwind"} icon={<TailwindIcon />} />

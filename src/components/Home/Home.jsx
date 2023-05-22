@@ -6,6 +6,8 @@ import { useDispatch } from 'react-redux';
 import CommentedHeading from '../CommentedHeading/CommentedHeading';
 import DarkButton from '../DarkButton/DarkButton';
 import useTitle from '../../hooks/useTitle';
+import { DownIcon } from '../ReactIcons/ReactIcons';
+import { IconContext } from 'react-icons/lib';
 
 export default function Home() {
   useTitle();
@@ -13,7 +15,7 @@ export default function Home() {
 
   return (
     <div className='bg-zinc-800 min-h-screen'>
-      <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-center items-center'>
+      <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-evenly items-center'>
         <div className='font-roboto  max-w-[80%]'>
           <div className='flex flex-col justify-center items-center gap-4'>
             <h2 className='text-lg'>Hii, I am</h2>
@@ -21,11 +23,22 @@ export default function Home() {
             <hr className='bg-neutral-300 w-[80%]' />
           </div>
         </div>
+        <div className='animate-bounce '>
+          <a href="#aboutme">
+            <DarkButton>
+              <IconContext.Provider value={{ className: "text-neutral-400" }}>
+                <DownIcon />
+              </IconContext.Provider>
+            </DarkButton>
+          </a>
+        </div>
       </section>
 
-      <About />
+      <section id='about' >
+        <About />
+      </section>
 
-      <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-start items-center'>
+      <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-start items-center' id='contact'>
         <div className='font-roboto  max-w-[80%]'>
 
           <div className='w-full flex flex-col'>
