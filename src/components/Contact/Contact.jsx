@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import CommentedHeading from '../CommentedHeading/CommentedHeading';
 import DarkButton from '../DarkButton/DarkButton';
+import useTitle from '../../hooks/useTitle';
 export default function Contact() {
-
+    useTitle("Contact");
     const [nameInput, setNameInput] = useState('');
     const [emailInput, setEmailInput] = useState('');
     const [messageInput, setMessageInput] = useState('');

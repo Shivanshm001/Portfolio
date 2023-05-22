@@ -5,10 +5,12 @@ import { setActiveTab } from '../../redux/topbar/topbarActions';
 import { useDispatch } from 'react-redux';
 import CommentedHeading from '../CommentedHeading/CommentedHeading';
 import DarkButton from '../DarkButton/DarkButton';
+import useTitle from '../../hooks/useTitle';
 
 export default function Home() {
+  useTitle();
   const dispatch = useDispatch();
-  
+
   return (
     <div className='bg-zinc-800 min-h-screen'>
       <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-center items-center'>

@@ -2,8 +2,10 @@ import React from 'react'
 import CommentedHeading from '../CommentedHeading/CommentedHeading'
 import ToolIcon from '../ToolsIUse/ToolIcon'
 import { HTMLIcon, JSIcon, JSXIcon, TailwindIcon, ReduxIcon, BootstrapIcon, ExpressJSIcon, NodeJSIcon, MongoDBIcon, MySQLIcon } from '../ReactIcons/ReactIcons'
+import useTitle from '../../hooks/useTitle'
 
 function FunctionHeading({ title, subTitle, children }) {
+
   return (
     <div className='my-4 flex flex-col gap-4 '>
       <h1 className='text-xl text-yellow-500'>
@@ -25,6 +27,7 @@ function FunctionHeading({ title, subTitle, children }) {
 
 
 export default function About() {
+  useTitle("About")
   return (
     <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-start items-center'>
       <div className='font-roboto  max-w-[80%]'>
