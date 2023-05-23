@@ -7,7 +7,7 @@ import { JSXIcon } from '../ReactIcons/ReactIcons';
 
 export default function Sidebar() {
     return (
-        <nav className='font-poppins sticky top-0  bg-stone-900 pt-12 md:pt-0 md:min-h-screen min-w-full sm:min-w-1/4 sm:max-w-[25%]'>
+        <nav className='font-poppins sticky top-0  bg-stone-900  sm:min-h-screen min-w-full sm:min-w-1/4 sm:max-w-[25%]'>
             <AccordionContainer title={"Navigation"}>
 
                 <AccordionItem destination={"/"} text={"Home.jsx"} icon={<JSXIcon />} distType={"internal"} />

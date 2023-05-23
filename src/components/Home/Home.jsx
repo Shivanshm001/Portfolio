@@ -19,7 +19,7 @@ export default function Home() {
         <div className='font-roboto  max-w-[80%]'>
           <div className='flex flex-col justify-center items-center gap-4'>
             <h2 className='text-lg'>Hii, I am</h2>
-            <h1 className='text-6xl font-light' >Shivansh Mishra</h1>
+            <h1 className='text-4xl md:text-6xl font-light text-center' >Shivansh Mishra</h1>
             <hr className='bg-neutral-300 w-[80%]' />
           </div>
         </div>

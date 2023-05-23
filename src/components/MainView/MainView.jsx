@@ -9,7 +9,7 @@ export default function MainView() {
 
     return (
         <main className='min-h-screen bg-zinc-800'>
-            <div className='sticky top-0'>
+            <div className='sticky top-0 hidden sm:block'>
                 <TopBar />
             </div>
             <div>

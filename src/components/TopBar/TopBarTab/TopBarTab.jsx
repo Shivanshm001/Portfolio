@@ -24,7 +24,7 @@ export default function TopBarTab({ desitination, title, icon }) {
 
     return (
         <Link to={desitination} onClick={() => dispatch(setActiveTab(desitination))} className={`border border-stone-700 flex justify-center items-center ${topbar.openedTabs.includes(desitination) ? "block" : "hidden"}`}>
-            <div className={`flex justify-center items-center gap-2 px-4 py-2 hover:bg-stone-800 ${topbar.activeTab === desitination ? "bg-stone-700" : "bg-stone-900"}`}>
+            <div className={`flex justify-center items-center gap-2 px-2 sm:px-4 py-1  sm:py-2 hover:bg-stone-800 ${topbar.activeTab === desitination ? "bg-stone-700" : "bg-stone-900"}`}>
                 <span>{icon}</span>
                 <span className={`text-neutral-300 text-xs ${topbar.activeTab === desitination ? "font-semibold text-sm" : "font-base"}`}>{title}</span>
                 <button className='p-1 hover:bg-stone-600 rounded-sm font-bold' onClick={(e) => handleClosing(e, desitination)}>{<CloseIcon />}</button>
