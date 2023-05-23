@@ -1,0 +1,5 @@
+export const ACTIONS = {
+    "UPDATE_NAME": "UPDATE_NAME",
+    "UPDATE_EMAIL": "UPDATE_EMAIL",
+    "UPDATE_MESSAGE": "UPDATE_MESSAGE",
+}
