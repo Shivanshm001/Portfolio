@@ -44,10 +44,10 @@ export default function Home() {
           <div className='w-full flex flex-col'>
             <div className='min-h-screen flex justify-center  flex-col'>
 
-              <CommentedHeading title="Get in touch (Contact me)" style="text-2xl" />
+              <CommentedHeading title="Get in touch (Contact me)" style="text-base text-2xl" />
 
               <div className='m-4'>
-                <p className='tracking-widest text-justify font-extralight space-x-4 leading-10'>
+                <p className='tracking-widest text-justify font-extralight space-x-4 text-sm sm:text-base leading-10'>
                   I would love to hear from you and discuss any opportunities, collaborations, or projects you have in mind. Whether you have a question, feedback, or simply want to connect, please don't hesitate to reach out.
                 </p>
               </div>

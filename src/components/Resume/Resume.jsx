@@ -15,10 +15,10 @@ export default function Resume() {
       <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-start items-center'>
         <div className='font-roboto  max-w-[80%]'>
 
-          <div className='min-h-screen flex justify-evenly  flex-col '>
-            <CommentedHeading title="Education" style="text-2xl" />
+          <div className='min-h-screen flex justify-center  flex-col '>
+            <CommentedHeading title="Education" style="text-lg sm:text-2xl" />
             <div className='m-4 '>
-              <ul className='list-disc flex flex-col gap-6 text-sm text-neutral-400'>
+              <ul className='list-disc flex flex-col gap-6 text-sm text-neutral-400 mt-8'>
                 <li >The Odin Project.</li>
                 <li >The complete Web develpement bootcamp by Angela Yu.</li>
                 <li >Bachelor's in Computer Application, Panjab University, India.</li>

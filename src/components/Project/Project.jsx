@@ -20,14 +20,16 @@ export default function Project({ title, startYear, endYear, image, link, detail
                     </a>
                     <ul className='list-disc pl-8 text-sm my-4 flex flex-col gap-4 tracking-widest'>
                         {
-                            details.map((detail, index) => (<li key={index} className='text-neutral-400'>{detail}</li>))
+                            details.map((detail, index) => (<li key={index} className='text-neutral-400 whitespace-normal'>
+                                <span className='whitespace-normal break-words text-justify tracking-wide leading-6'>{detail}</span>
+                            </li>))
                         }
                     </ul>
                 </div>
             </div>
-            <div className='w-full my-12 flex justify-end '>
+            <div className='w-full my-12 flex justify-center items-center sm:justify-end '>
                 <a href={link} target='_blank' referrerPolicy='no-referrer' title={title} className='rounded overflow-hiddens hover:ring ring-stone-400'>
-                    <img src={image} alt="" className='min-w-[500px]  max-w-lg h-auto rounded' />
+                    <img src={image} alt="" className='min-w-[300px] w-[320px] sm:w-[500px]  max-w-lg h-auto rounded' />
                 </a>
             </div>
         </div>
