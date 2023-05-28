@@ -57,7 +57,7 @@ export default function ContactForm() {
             </InputWrapper>
 
 
-            <div className='border p-2'>
+            <div className='s p-2'>
                 <DarkButton disabled={false}>
                     <span className='text-yellow-400'>Send</span>
                     <span>()</span>

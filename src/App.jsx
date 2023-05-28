@@ -1,5 +1,5 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React,{useEffect} from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 
 
 //Components
@@ -15,7 +15,17 @@ import Contact from './components/Contact/Contact';
 //End Components
 
 
+
 export default function App() {
+  const location = useLocation();
+  const { pathname } = location;
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
+
+
   return (
     <>
       <Routes>

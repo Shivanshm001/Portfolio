@@ -5,7 +5,7 @@ export default function Project({ title, startYear, endYear, image, link, detail
     return (
         <div className='border-b border-neutral-400'>
 
-            <div className='grid grid-cols-3'>
+            <div className='grid gap-4 sm:gap-2 sm:grid-cols-3'>
                 <div className='col-span-1'>
                     <h2 className='text-stone-100 text-lg font-light tracking-widest '>
                         <span className='text-blue-600 text-sm'>Year </span>
@@ -14,7 +14,7 @@ export default function Project({ title, startYear, endYear, image, link, detail
                         <span>:</span>
                     </h2>
                 </div>
-                <div className='col-span-2 flex flex-col gap-4'>
+                <div className='col-span-2 mt-4 sm:mt-0 flex flex-col gap-4'>
                     <a href={link} target='_blank' referrerPolicy='no-referrer' title={title} className=''>
                         <h2 className='font-light text-yellow-400 w-max tracking-wider text-lg border-b border-dashed hover:border-solid border-yellow-400 transition-all delay-150 duration-300 ease-in-out'>&lt; {title} /&gt;</h2>
                     </a>
