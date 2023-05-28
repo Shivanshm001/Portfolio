@@ -11,7 +11,7 @@ export default function TopBar() {
       <TopBarTab desitination={"/about"} title={"About"} icon={<JSIcon />} />
       <TopBarTab desitination={"/resume"} title={"Resume"} icon={<JSIcon />} />
       <TopBarTab desitination={"/contact"} title={"Contact"} icon={<JSIcon />} />
-      <TopBarTab desitination={"."} title={"Placeholder"}/>
+      <TopBarTab desitination={"/projects"} title={"Projects"} icon={<JSIcon />} />
     </div>
   )
 }

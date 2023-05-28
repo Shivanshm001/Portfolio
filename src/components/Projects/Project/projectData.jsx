@@ -1,4 +1,4 @@
-import url_shortener_img from '../../assets/url-shortener-img.png';
+import url_shortener_img from '../../../assets/url-shortener-img.png';
 
 
 const projectData = [

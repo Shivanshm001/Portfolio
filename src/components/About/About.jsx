@@ -15,11 +15,11 @@ function FunctionHeading({ title, subTitle, children }) {
       </h1>
 
       <div className='px-4 border-l border-neutral-400 '>
-        <span className='text-purple-500'>return</span> (
+        <span className='text-purple-500'>return</span> [
         <div className='py-4'>
           {children}
         </div>
-        )
+        ]
       </div>
       <span className='text-yellow-500 text-xl'>&#125;;</span>
     </div>
@@ -30,10 +30,10 @@ function FunctionHeading({ title, subTitle, children }) {
 export default function About() {
   useTitle("About")
   return (
-    <section className='text-neutral-100 min-h-screen  w-full flex flex-col justify-start items-center' id='aboutme'>
+    <section className='text-neutral-100 min-h-[50vh]  w-full flex flex-col justify-start items-center' id='aboutme'>
       <div className='font-roboto  max-w-[80%]'>
 
-        <div className='min-h-screen flex justify-center  flex-col sm:max-w-[80%]'>
+        <div className=' flex min-h-[50vh] justify-center  flex-col sm:max-w-[80%]'>
           <CommentedHeading title="Who am I? ( About me )" style="text-lg sm:text-2xl" />
           <div className='m-4'>
             <p className='tracking-widest text-justify font-extralight space-x-4 text-sm sm:text-base leading-10'>I am a web developer, I work with HTML, CSS, Bootstrap, Tailwind,

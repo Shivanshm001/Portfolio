@@ -2,7 +2,7 @@ import { ACTIONS } from "./ACTIONS";
 
 const initialState = {
     activeTab: "/",
-    openedTabs: ["/", "/about", "/resume", "/contact"]
+    openedTabs: ["/", "/about", "/resume", "/contact","/projects"]
 }
 
 export const topbarReducer = (state = initialState, action) => {

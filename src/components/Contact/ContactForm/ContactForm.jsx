@@ -25,9 +25,12 @@ export default function ContactForm() {
     return (
         <form className='flex flex-col gap-4 w-full max-w-[80%]' onSubmit={handleSubmit}>
             <InputWrapper>
-                <TextInput id={"name"}
+                <TextInput
+                    id={"name"}
+                    type={"text"}
                     label={"Name"}
                     name={"name"}
+                    maxLength={50}
                     placeholder={"Enter your name"}
                     value={contact.name}
                     onChange={(e) => dispatch(updateName(e.target.value))}
@@ -37,6 +40,7 @@ export default function ContactForm() {
             <InputWrapper>
                 <TextInput
                     id={"email"}
+                    type={"email"}
                     label={"Email"}
                     name={"email"}
                     placeholder={"Enter your email"}
@@ -48,6 +52,7 @@ export default function ContactForm() {
             <InputWrapper>
                 <TextArea
                     id={"message"}
+                    maxLength={250}
                     label={"Message"}
                     name={"message"}
                     placeholder={"Message..."}

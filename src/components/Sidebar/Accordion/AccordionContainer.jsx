@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {AiOutlineRight,AiOutlineDown} from 'react-icons/ai';
 
 export default function AccordionContainer({ title, children }) {
-    const [isActive,setIsActive] = useState(false);
+    const [isActive,setIsActive] = useState(true);
     
     return (
         <div className='p-2'>
