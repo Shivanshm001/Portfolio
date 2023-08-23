@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Project({ title, startYear, endYear, image, link, details }) {
+export default function Project({ title, startYear, endYear, image, websiteLink, details }) {
     
     return (
         <div className='border-b border-neutral-400'>
@@ -15,7 +15,7 @@ export default function Project({ title, startYear, endYear, image, link, detail
                     </h2>
                 </div>
                 <div className='col-span-2 mt-4 sm:mt-0 flex flex-col gap-4'>
-                    <a href={link} target='_blank' referrerPolicy='no-referrer' title={title} className=''>
+                    <a href={websiteLink} target='_blank' referrerPolicy='no-referrer' title={title} className=''>
                         <h2 className='font-light text-yellow-400 w-max tracking-wider text-lg border-b border-dashed hover:border-solid border-yellow-400 transition-all delay-150 duration-300 ease-in-out'>&lt; {title} /&gt;</h2>
                     </a>
                     <ul className='list-disc pl-8 text-sm my-4 flex flex-col gap-4 tracking-widest'>
@@ -28,7 +28,7 @@ export default function Project({ title, startYear, endYear, image, link, detail
                 </div>
             </div>
             <div className='w-full my-12 flex justify-center items-center sm:justify-end '>
-                <a href={link} target='_blank' referrerPolicy='no-referrer' title={title} className='rounded overflow-hiddens hover:ring ring-stone-400'>
+                <a href={websiteLink} target='_blank' referrerPolicy='no-referrer' title={title} className='rounded overflow-hiddens hover:ring ring-stone-400'>
                     <img src={image} alt="" className='min-w-[300px] w-[320px] sm:w-[500px]  max-w-lg h-auto rounded' />
                 </a>
             </div>

@@ -19,6 +19,7 @@ export default function Sidebar() {
             <AccordionContainer title={"Projects"}>
                 <AccordionContainer title={"Web_apps"}>
                     <AccordionItem destination={"https://urlshortener-gr27.onrender.com/"} text={"URL Shortener"} icon={<JSXIcon />} />
+                    <AccordionItem destination={"https://minotesclone.onrender.com/"} text={"MIUI Notes Clone"} icon={<JSXIcon />} />
                 </AccordionContainer>
             </AccordionContainer>
         </nav>

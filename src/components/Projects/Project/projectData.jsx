@@ -1,5 +1,5 @@
 import url_shortener_img from '../../../assets/url-shortener-img.png';
-
+import miui_notes_clone from '../../../assets/miui-notes-clone.png';
 
 const projectData = [
     {
@@ -17,6 +17,22 @@ const projectData = [
             "Helps in shortening long URL paths."
         ]
     },
+
+    {
+        "id": 2,
+        "title": "Notes",
+        "subTitle": "Frontend",
+        "startYear": 2023,
+        "endYear": 2023,
+        "imageLink": miui_notes_clone,
+        "websiteLink": "https://minotesclone.onrender.com/",
+        "details": [
+            "A clone of the MIUI Notes application",
+            "Used react hooks useRef useEffect useState and react-router-dom",
+            "Used redux and react-redux for global state management",
+            "Styled using tailwindcss and react-icons"
+        ]
+    }
 ]
 
 
